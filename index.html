@@ -1,74 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>GVA</title>
-    
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 900px;
-            margin: 60px auto;
-            padding: 20px;
-            background: #111;
-            color: white;
-        }
+    <title>GVA | Developer Portfolio</title>
 
-        h1 {
-            font-size: 48px;
-        }
+    <meta name="description"
+          content="GVA developer portfolio — AI, software and practical technology projects.">
 
-        .card {
-            background: #1e1e1e;
-            padding: 20px;
-            margin: 15px 0;
-            border-radius: 12px;
-        }
-
-        .status {
-            color: #5cff8d;
-        }
-
-        .card-link {
-    text-decoration: none;
-    color: inherit;
-}
-
-.card {
-    transition: transform 0.2s ease;
-    cursor: pointer;
-}
-
-.card:hover {
-    transform: translateY(-4px);
-}
-    </style>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
 
-    <h1>GVA Developer Hub 🚀</h1>
-    <p class="status">● Online</p>
+<div class="container">
 
-    <div class="card">
-        <h2>👨‍💻 Development</h2>
-        <p>My projects, experiments and tools.</p>
-    </div>
+    <nav>
+        <a href="/" class="logo">GVA_</a>
 
-    <div class="card">
-        <h2>🖥️ Rock</h2>
-        <p>Personal laptop control system — coming soon.</p>
-    </div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Stack</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Connect</a></li>
+        </ul>
+    </nav>
 
-<a href="/projects/" class="card-link">
-    <div class="card">
-        <h2>🧪 Projects</h2>
-        <p>Python, AI and web development projects.</p>
-        <span>View Projects →</span>
-    </div>
-</a>
+
+    <main>
+
+        <!-- HERO -->
+
+        <div class="hero">
+
+            <p class="tag">&gt; AI • DATA • DEVELOPMENT</p>
+
+            <h1>
+                I BUILD<br>
+                THINGS THAT <span>THINK.</span>
+            </h1>
+
+            <p class="hero-description">
+                Hi, I'm Jeeva — an AI & Data Science student building
+                practical software, intelligent systems and developer tools.
+            </p>
+
+            <div class="buttons">
+
+                <a href="#projects" class="btn btn-primary">
+                    Explore Projects →
+                </a>
+
+                <a href="https://github.com/gvaa404"
+                   target="_blank"
+                   class="btn">
+                    GitHub ↗
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- ABOUT -->
+
+        <section id="about">
+
+            <p class="section-number">01 / ABOUT</p>
+            <h2 class="section-title">Building through experimentation.</h2>
+
+            <p class="about-text">
+                I'm interested in artificial intelligence, software development
+                and building practical technology. I learn by creating projects,
+                experimenting with ideas and turning them into working systems.
+            </p>
+
+        </section>
+
+
+        <!-- SKILLS -->
+
+        <section id="skills">
+
+            <p class="section-number">02 / TECH STACK</p>
+            <h2 class="section-title">Tools I work with.</h2>
+
+            <div class="skills">
+                <span class="skill">Python</span>
+                <span class="skill">AI / ML</span>
+                <span class="skill">Data Science</span>
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">Git</span>
+                <span class="skill">GitHub</span>
+                <span class="skill">Cloudflare</span>
+            </div>
+
+        </section>
+
+
+        <!-- PROJECTS -->
+
+        <section id="projects">
+
+            <p class="section-number">03 / FEATURED WORK</p>
+            <h2 class="section-title">Things I'm building.</h2>
+
+            <div class="projects">
+
+                <a href="/projects/gva-downloader/" class="project">
+
+                    <span class="project-number">01</span>
+
+                    <h3>GVA Downloader</h3>
+
+                    <p>
+                        Python-based media downloading application built
+                        as a practical software development project.
+                    </p>
+
+                    <span class="project-link">
+                        View Project →
+                    </span>
+
+                </a>
+
+
+                <div class="project">
+
+                    <span class="project-number">02</span>
+
+                    <h3>Rock</h3>
+
+                    <p>
+                        Phone-to-laptop remote control system designed
+                        for controlling applications and computer functions.
+                    </p>
+
+                    <span class="status">
+                        ● IN DEVELOPMENT
+                    </span>
+
+                </div>
+
+            </div>
+
+            <div class="buttons">
+                <a href="/projects/" class="btn">
+                    View All Projects →
+                </a>
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT -->
+
+        <section id="contact">
+
+            <p class="section-number">04 / CONNECT</p>
+            <h2 class="section-title">Find me online.</h2>
+
+            <div class="contact-links">
+
+                <a href="https://github.com/gvaa404"
+                   target="_blank">
+                    GitHub ↗
+                </a>
+
+                <!-- Add your LinkedIn URL later -->
+                <a href="#">
+                    LinkedIn ↗
+                </a>
+
+                <!-- Add resume later -->
+                <a href="#">
+                    Resume ↗
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <span>GVA_</span>
+        <span>Built & deployed through Cloudflare • 2026</span>
+    </footer>
+
+</div>
 
 </body>
 </html>
