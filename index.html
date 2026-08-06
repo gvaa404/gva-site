@@ -30,6 +30,20 @@
         .status {
             color: #5cff8d;
         }
+
+        .card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card {
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
     </style>
 </head>
 
@@ -48,10 +62,13 @@
         <p>Personal laptop control system — coming soon.</p>
     </div>
 
+<a href="/projects/" class="card-link">
     <div class="card">
         <h2>🧪 Projects</h2>
         <p>Python, AI and web development projects.</p>
+        <span>View Projects →</span>
     </div>
+</a>
 
 </body>
 </html>
