@@ -444,6 +444,141 @@ section {
 
 
 /* =====================================================
+   SKILL GROUPS
+   ===================================================== */
+
+.skill-group {
+
+    margin-bottom: 26px;
+}
+
+.skill-group:last-child {
+
+    margin-bottom: 0;
+}
+
+.skill-group-label {
+
+    color: var(--muted);
+
+    font-family: monospace;
+
+    font-size: 12px;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 12px;
+}
+
+
+/* =====================================================
+   EDUCATION / EXPERIENCE
+   ===================================================== */
+
+.timeline {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+.entry {
+
+    padding: 26px 30px;
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+
+    border-left: 3px solid var(--accent);
+
+    border-radius: 10px;
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.entry:hover {
+
+    transform: translateX(4px);
+}
+
+.entry-head {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    align-items: baseline;
+
+    justify-content: space-between;
+
+    gap: 10px;
+
+    margin-bottom: 6px;
+}
+
+.entry-head h3 {
+
+    font-size: 21px;
+}
+
+.entry-period {
+
+    color: var(--accent);
+
+    font-family: monospace;
+
+    font-size: 13px;
+
+    letter-spacing: 0.5px;
+
+    white-space: nowrap;
+}
+
+.entry-org {
+
+    color: var(--muted);
+
+    font-size: 15px;
+
+    margin-bottom: 12px;
+}
+
+.entry p.entry-desc {
+
+    color: var(--muted);
+
+    font-size: 16px;
+
+    max-width: 700px;
+}
+
+.entry-minor {
+
+    margin-top: 6px;
+
+    padding: 14px 20px;
+
+    color: var(--muted);
+
+    font-size: 14px;
+
+    border-top: 1px dashed var(--border);
+}
+
+.entry-minor span {
+
+    color: var(--text);
+}
+
+
+/* =====================================================
    PROJECTS
    ===================================================== */
 
@@ -620,9 +755,13 @@ footer {
 
         width: 100%;
 
-        justify-content: space-between;
+        flex-wrap: wrap;
 
-        gap: 10px;
+        justify-content: flex-start;
+
+        row-gap: 10px;
+
+        column-gap: 18px;
 
         font-size: 14px;
     }
