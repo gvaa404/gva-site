@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ROCK — Project Note | Jeevanantham K (GVA)</title>
+    <meta name="description" content="ROCK — A local Flask-based Windows remote control dashboard built by Jeevanantham K (GVA).">
+
+    <!-- Open Graph / Meta -->
+    <meta property="og:title" content="ROCK — Project Note | GVA">
+    <meta property="og:description" content="A local Flask-based Windows remote control dashboard.">
+    <meta property="og:type" content="article">
+
+    <!-- Google Fonts: Space Grotesk (Headings), DM Sans (Body), JetBrains Mono (Tech/Meta) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <!-- ================= SITE HEADER ================= -->
+    <header class="site-header" id="header">
+        <div class="container">
+            <nav aria-label="Main Navigation">
+                <a href="/" class="logo" id="siteLogo">
+                    GVA<span class="logo-dot">_</span>
+                    <span class="logo-tag">/ JEEVAA</span>
+                </a>
+
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/#about">About</a></li>
+                    <li><a href="/projects/" class="active">Projects</a></li>
+                    <li>
+                        <a href="https://github.com/gvaa404/ROCK" target="_blank" rel="noopener noreferrer">
+                            GitHub ↗
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Switch theme">
+                        <span class="theme-icon">☾</span>
+                        <span class="theme-text">Dark</span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="mainContent">
+
+        <!-- ================= PROJECT HEADER ================= -->
+        <section class="page-header-block" id="projectHeader">
+            <div class="container">
+                <a href="/projects/" class="back-crumb" id="backLink">
+                    ← All Projects
+                </a>
+
+                <div style="margin-bottom: 8px;">
+                    <span class="project-num-badge">02 // SYSTEM &amp; AUTOMATION</span>
+                    <span class="project-status-tag completed" style="margin-left: 10px;">● COMPLETED</span>
+                </div>
+
+                <h1 class="page-title">
+                    ROCK
+                </h1>
+
+                <p class="page-desc">
+                    A local Flask-based remote control dashboard that lets you control a Windows laptop from a smartphone or secondary device on the same local network using native Python automation libraries.
+                </p>
+
+                <div class="spec-grid" id="projectSpecs">
+                    <div class="spec-cell">
+                        <span class="spec-cell-label">Stack</span>
+                        <span class="spec-cell-value">Python / Flask / PyAutoGUI</span>
+                    </div>
+                    <div class="spec-cell">
+                        <span class="spec-cell-label">OS Target</span>
+                        <span class="spec-cell-value">Windows OS &amp; Mobile Web</span>
+                    </div>
+                    <div class="spec-cell">
+                        <span class="spec-cell-label">Security</span>
+                        <span class="spec-cell-value">Tokens &amp; CSRF Validation</span>
+                    </div>
+                    <div class="spec-cell">
+                        <span class="spec-cell-label">Repository</span>
+                        <span class="spec-cell-value">Public on GitHub</span>
+                    </div>
+                </div>
+
+                <div class="hero-actions" style="margin-top: 16px;">
+                    <a href="https://github.com/gvaa404/ROCK" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="btnSource">
+                        View Repository on GitHub ↗
+                    </a>
+                    <a href="/projects/" class="btn btn-outline">
+                        ← Back to Archive
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= 01 / WHAT IT DOES ================= -->
+        <section class="section-block" id="capabilities">
+            <div class="container">
+                <div class="section-grid">
+                    <aside class="section-aside">
+                        <span class="section-num-tag">01 / SUBSYSTEMS</span>
+                        <h2 class="section-main-title">Core Subsystems</h2>
+                        <p class="section-summary-text">Modules developed for remote laptop control and diagnostics.</p>
+                    </aside>
+
+                    <div class="section-body">
+                        <div class="technical-feature-list">
+                            <div class="feature-tile">
+                                <span class="feature-tile-num">01 // DESKTOP AUTOMATION</span>
+                                <h3 class="feature-tile-title">Mouse &amp; Keyboard Control</h3>
+                                <p class="feature-tile-desc">
+                                    Real-time cursor movement, text typing, Windows hotkey dispatching, and on-demand desktop screenshot streaming over local HTTP.
+                                </p>
+                            </div>
+
+                            <div class="feature-tile">
+                                <span class="feature-tile-num">02 // MEDIA SUBSYSTEM</span>
+                                <h3 class="feature-tile-title">Playback &amp; Volume Hotkeys</h3>
+                                <p class="feature-tile-desc">
+                                    Direct integration for Spotify, VLC and YouTube media control (play, pause, track skip, scrubbing, and volume modulation).
+                                </p>
+                            </div>
+
+                            <div class="feature-tile">
+                                <span class="feature-tile-num">03 // BROWSER NAVIGATION</span>
+                                <h3 class="feature-tile-title">Brave Browser Controller</h3>
+                                <p class="feature-tile-desc">
+                                    Open new tabs, switch active pages, launch search queries or specific URLs, and scroll long pages directly from mobile.
+                                </p>
+                            </div>
+
+                            <div class="feature-tile">
+                                <span class="feature-tile-num">04 // SYSTEM UTILITIES</span>
+                                <h3 class="feature-tile-title">Diagnostics &amp; File Sharing</h3>
+                                <p class="feature-tile-desc">
+                                    CPU/battery telemetry monitoring, bidirectional clipboard sharing, scratchpad notes, and sandboxed RockShare directory access.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= 02 / TECH STACK ================= -->
+        <section class="section-block" id="techStack">
+            <div class="container">
+                <div class="section-grid">
+                    <aside class="section-aside">
+                        <span class="section-num-tag">02 / TECH STACK</span>
+                        <h2 class="section-main-title">Python Libraries</h2>
+                        <p class="section-summary-text">Underlying system and network dependencies.</p>
+                    </aside>
+
+                    <div class="section-body">
+                        <div class="stack-badges-wrap" style="gap: 8px;">
+                            <span class="stack-badge">Python 3</span>
+                            <span class="stack-badge">Flask</span>
+                            <span class="stack-badge">PyAutoGUI</span>
+                            <span class="stack-badge">PyGetWindow</span>
+                            <span class="stack-badge">psutil</span>
+                            <span class="stack-badge">Pyperclip</span>
+                            <span class="stack-badge">HTML / CSS / JS</span>
+                            <span class="stack-badge">Git</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= 03 / SECURITY ================= -->
+        <section class="section-block" id="security">
+            <div class="container">
+                <div class="section-grid">
+                    <aside class="section-aside">
+                        <span class="section-num-tag">03 / SECURITY</span>
+                        <h2 class="section-main-title">Security Considerations</h2>
+                        <p class="section-summary-text">Designing a safe remote system on local networks.</p>
+                    </aside>
+
+                    <div class="section-body">
+                        <div class="prose-text">
+                            <p>
+                                Because ROCK exposes system control capabilities over a local network, security was a primary design consideration:
+                            </p>
+                            <p>
+                                Authentication tokens protect dashboard access, destructive endpoints require CSRF verification, file operations are sandboxed to a single dedicated folder to prevent unauthorized directory traversal, and app launching uses an explicit allow-list rather than arbitrary command execution.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= 04 / TAKEAWAYS ================= -->
+        <section class="section-block no-border" id="learnings">
+            <div class="container">
+                <div class="section-grid">
+                    <aside class="section-aside">
+                        <span class="section-num-tag">04 / TAKEAWAYS</span>
+                        <h2 class="section-main-title">What I Learned</h2>
+                        <p class="section-summary-text">Key engineering insights gained from this build.</p>
+                    </aside>
+
+                    <div class="section-body">
+                        <div class="prose-text">
+                            <p>
+                                ROCK was a hands-on exercise in connecting mobile web interfaces with desktop operating system APIs, handling state and synchronization across devices, process monitoring with <code>psutil</code>, and designing simple RESTful endpoints for fast client response times.
+                            </p>
+                        </div>
+
+                        <div class="hero-actions" style="margin-top: 24px;">
+                            <a href="https://github.com/gvaa404/ROCK" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                                GitHub Repository ↗
+                            </a>
+                            <a href="/projects/" class="btn btn-outline">
+                                View All Projects →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer" id="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div>
+                    <span class="footer-brand">GVA_</span>
+                    <span>ROCK Project Note · Jeevanantham K</span>
+                </div>
+                <div>
+                    <span>ENGINEERING NOTEBOOK • 2026</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/theme.js"></script>
+</body>
+
+</html>

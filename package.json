@@ -1,0 +1,14 @@
+{
+  "name": "gva-portfolio",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Personal AI & Data Science portfolio website for Jeevanantham K (GVA)",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "echo 'Static site ready'",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

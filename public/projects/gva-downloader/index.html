@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GVA Downloader — Project Note | Jeevanantham K (GVA)</title>
+    <meta name="description" content="GVA Downloader — A Python and Flask media downloader application built by Jeevanantham K (GVA).">
+
+    <!-- Open Graph / Meta -->
+    <meta property="og:title" content="GVA Downloader — Project Note | GVA">
+    <meta property="og:description" content="A Python and Flask media downloader application with format selection and web UI.">
+    <meta property="og:type" content="article">
+
+    <!-- Google Fonts: Space Grotesk (Headings), DM Sans (Body), JetBrains Mono (Tech/Meta) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <!-- ================= SITE HEADER ================= -->
+    <header class="site-header" id="header">
+        <div class="container">
+            <nav aria-label="Main Navigation">
+                <a href="/" class="logo" id="siteLogo">
+                    GVA<span class="logo-dot">_</span>
+                    <span class="logo-tag">/ JEEVAA</span>
+                </a>
+
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/#about">About</a></li>
+                    <li><a href="/projects/" class="active">Projects</a></li>
+                    <li>
+                        <a href="https://github.com/gvaa404/GVA_DOWNLOADER" target="_blank" rel="noopener noreferrer">
+                            GitHub ↗
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Switch theme">
+                        <span class="theme-icon">☾</span>
+                        <span class="theme-text">Dark</span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="mainContent">
+
+        <!-- ================= PROJECT HEADER ================= -->
+        <section class="page-header-block" id="projectHeader">
+            <div class="container">
+                <a href="/projects/" class="back-crumb" id="backLink">
+                    ← All Projects
+                </a>
+
+                <div style="margin-bottom: 8px;">
+                    <span class="project-num-badge">01 // SOFTWARE APPLICATION</span>
+                    <span class="project-status-tag completed" style="margin-left: 10px;">● COMPLETED (V1 → V2)</span>
+                </div>
+
+                <h1 class="page-title">
+                    GVA Downloader
+                </h1>
+
+                <p class="page-desc">
+                    A Python + Flask media downloader with a browser-based user interface, built to explore backend subprocess pipelines, stream extraction with yt-dlp, and user-facing application structure.
+                </p>
+
+                <div class="spec-grid" id="projectSpecs">
+                    <div class="spec-cell">
+                        <span class="spec-cell-label">Stack</span>
+                        <span class="spec-cell-value">Python / Flask / yt-dlp</span>
+                    </div>
+                    <div class="spec-cell">
+                        <span class="spec-cell-label">Frontend</span>
+                        <span class="spec-cell-value">HTML5, CSS3, JavaScript</span>
+                    </div>
+                    <div class="spec-cell">
+                        <span class="spec-cell-label">Type</span>
+                        <span class="spec-cell-value">Local Web Application</span>
+                    </div>
+                    <div class="spec-cell">
+                        <span class="spec-cell-label">Repository</span>
+                        <span class="spec-cell-value">Public on GitHub</span>
+                    </div>
+                </div>
+
+                <div class="hero-actions" style="margin-top: 16px;">
+                    <a href="https://github.com/gvaa404/GVA_DOWNLOADER" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="btnSource">
+                        View Source on GitHub ↗
+                    </a>
+                    <a href="/projects/" class="btn btn-outline">
+                        ← Back to Archive
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= 01 / MOTIVATION ================= -->
+        <section class="section-block" id="overview">
+            <div class="container">
+                <div class="section-grid">
+                    <aside class="section-aside">
+                        <span class="section-num-tag">01 / OVERVIEW</span>
+                        <h2 class="section-main-title">Motivation &amp; Goals</h2>
+                        <p class="section-summary-text">Why I built this tool and what technical problems it addressed.</p>
+                    </aside>
+
+                    <div class="section-body">
+                        <div class="prose-text">
+                            <p>
+                                GVA Downloader started as a practical software project to understand how a command-line script evolves into a complete, usable desktop web tool.
+                            </p>
+                            <p>
+                                The objective was to provide flexible video and audio quality selection, structured output folders, clear progress and error feedback, and a clean local web UI without heavy third-party framework overhead.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= 02 / TECH STACK ================= -->
+        <section class="section-block" id="techStack">
+            <div class="container">
+                <div class="section-grid">
+                    <aside class="section-aside">
+                        <span class="section-num-tag">02 / TECH STACK</span>
+                        <h2 class="section-main-title">Implementation</h2>
+                        <p class="section-summary-text">Libraries, runtimes and developer tools used.</p>
+                    </aside>
+
+                    <div class="section-body">
+                        <div class="stack-badges-wrap" style="gap: 8px;">
+                            <span class="stack-badge">Python 3</span>
+                            <span class="stack-badge">Flask</span>
+                            <span class="stack-badge">yt-dlp</span>
+                            <span class="stack-badge">HTML5</span>
+                            <span class="stack-badge">CSS3</span>
+                            <span class="stack-badge">JavaScript</span>
+                            <span class="stack-badge">Git &amp; GitHub</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= 03 / EVOLUTION ================= -->
+        <section class="section-block" id="evolution">
+            <div class="container">
+                <div class="section-grid">
+                    <aside class="section-aside">
+                        <span class="section-num-tag">03 / EVOLUTION</span>
+                        <h2 class="section-main-title">V1 → V2 Releases</h2>
+                        <p class="section-summary-text">Iterative architectural and UI improvements across versions.</p>
+                    </aside>
+
+                    <div class="section-body">
+                        <div class="version-track-grid">
+                            <div class="version-box">
+                                <span class="version-badge">Version 01 · Baseline</span>
+                                <h3 class="version-box-title">Initial Execution Pipeline</h3>
+                                <p class="version-box-desc">
+                                    Established core Python stream resolution, yt-dlp backend integration, and basic URL fetching routines.
+                                </p>
+                            </div>
+
+                            <div class="version-box">
+                                <span class="version-badge">Version 02 · Refactored</span>
+                                <h3 class="version-box-title">Modular Structure &amp; UI</h3>
+                                <p class="version-box-desc">
+                                    Refactored Flask routing, improved format and quality resolution selectors, and added clean error handling with organized download directory management.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= 04 / TAKEAWAYS ================= -->
+        <section class="section-block no-border" id="learnings">
+            <div class="container">
+                <div class="section-grid">
+                    <aside class="section-aside">
+                        <span class="section-num-tag">04 / TAKEAWAYS</span>
+                        <h2 class="section-main-title">What I Learned</h2>
+                        <p class="section-summary-text">Key engineering insights gained from this build.</p>
+                    </aside>
+
+                    <div class="section-body">
+                        <div class="prose-text">
+                            <p>
+                                Building GVA Downloader provided hands-on experience in backend request routing, handling subprocess operations safely, structuring Python modules for iterative maintenance, and using Git for version tracking across distinct software releases.
+                            </p>
+                        </div>
+
+                        <div class="hero-actions" style="margin-top: 24px;">
+                            <a href="https://github.com/gvaa404/GVA_DOWNLOADER" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                                GitHub Repository ↗
+                            </a>
+                            <a href="/projects/" class="btn btn-outline">
+                                View All Projects →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer" id="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div>
+                    <span class="footer-brand">GVA_</span>
+                    <span>GVA Downloader Case Study · Jeevanantham K</span>
+                </div>
+                <div>
+                    <span>ENGINEERING NOTEBOOK • 2026</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/theme.js"></script>
+</body>
+
+</html>
